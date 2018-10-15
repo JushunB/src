@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
     {
         public string Detail()
         {
-            return "Hello from  the Hoop capital USA";
+            return "Hello from  the Hoop capital USA!";
         }
     }
 }
