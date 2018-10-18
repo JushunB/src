@@ -1,5 +1,17 @@
 ﻿@{
     Layout = null;
+
+    var seriesTitle = "The Man of Steel";
+    var issueNumber = 700;
+    var description = "<p>Final issue! Witness the final hours of Lex Luthors' life and his one, last, great act of revenge! Even if Superman survives... <strong>will Clark Kent?</strong></p>";
+    var artists = new string[]
+    {
+        "Script: Jushun Blackmon",
+        "Pencils: Ceaser Drawer",
+        "Inks: Manny Ink",
+        "Colors: Johnny Rambo",
+        "Letters: Lucy Letter"
+    };
 }
 
 <!DOCTYPE html>
@@ -11,7 +23,14 @@
 </head>
 <body>
     <div>
-    <h1>Hello from our view!</h1>
+    <h1>@seriesTitle</h1>
+    <h2>Issue #@issueNumber</h2>
+    
+    <h5>Description:</h5>
+    <div>@Html.Raw(description)</div>
+
+    <h5>Artist:</h5>
+    <div>@artists</div>
     </div>
 </body>
 </html>
