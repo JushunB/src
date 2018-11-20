@@ -16,7 +16,7 @@ namespace WebApplication1.Controllers
                 SeriesTitle = "The Man of Steel",
                 IssueNumber = 700,
                 DescriptionHtml = "<p>Final issue! Witness the final hours of Lex Luthors' life and his one, last, great act of revenge! Even if Superman survives... <strong>will Clark Kent?</strong></p>",
-                Artists = new Artist[]
+                Artists = new []
                 {
                     new Artist() {Name = "Jushun Blackmon", Role = "Script"},
                     new Artist() {Name = "Ceaser Drawer", Role = "Pencils"},
