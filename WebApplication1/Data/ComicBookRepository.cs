@@ -28,32 +28,32 @@ namespace WebApplication1.Data
             new ComicBook()
             {
                 Id = 2,
-                SeriesTitle = "The Amazing Spider-Man",
-                IssueNumber = 700,
-                DescriptionHtml = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives...<strong>will Peter Parker?</strong></p>",
+                SeriesTitle = "The Man of Steel",
+                IssueNumber = 750,
+                DescriptionHtml = "<p>Celebrating 80 years of the<strong>Man of Steel</strong></p>",
                 Artists = new Artist[]
                 {
-                    new Artist() { Name = "Dan Slott", Role = "Script" },
-                    new Artist() { Name = "Humberto Ramos", Role = "Pencils" },
-                    new Artist() { Name = "Victor Olazaba", Role = "Inks" },
-                    new Artist() { Name = "Edgar Delgado", Role = "Colors" },
-                    new Artist() { Name = "Chris Eliopoulos", Role = "Letters" },
+                    new Artist() {Name = "Jushun Blackmon", Role = "Script"},
+                    new Artist() {Name = "Ceaser Drawer", Role = "Pencils"},
+                    new Artist() {Name = "Manny Ink", Role = "Inks"},
+                    new Artist() {Name = "Johnny Rambo", Role = "Colors"},
+                    new Artist() {Name = "Lucy Letter", Role = "Letters"},
                 },
                 Favorite = false
             },
             new ComicBook()
             {
                 Id = 3,
-                SeriesTitle = "The Amazing Spider-Man",
-                IssueNumber = 657,
-                DescriptionHtml = "<p><strong>FF: THREE TIE-IN.</strong> Spider-Man visits the FF for a very private wake--just for family.</p>",
+                SeriesTitle = "The Man of Steel",
+                IssueNumber = 800,
+                DescriptionHtml = "<p><strong>BATTLE OF THE BRATS.</strong> Superman and Superboy vs Batman and Robin, who will win in this battle of duos....</p>",
                 Artists = new Artist[]
                 {
-                    new Artist() { Name = "Dan Slott", Role = "Script" },
-                    new Artist() { Name = "Marcos Martin", Role = "Pencils" },
-                    new Artist() { Name = "Marcos Martin", Role = "Inks" },
-                    new Artist() { Name = "Muntsa Vicente", Role = "Colors" },
-                    new Artist() { Name = "Joe Caramagna", Role = "Letters" }
+                    new Artist() {Name = "Jushun Blackmon", Role = "Script"},
+                    new Artist() {Name = "Ceaser Drawer", Role = "Pencils"},
+                    new Artist() {Name = "Manny Ink", Role = "Inks"},
+                    new Artist() {Name = "Johnny Rambo", Role = "Colors"},
+                    new Artist() {Name = "Lucy Letter", Role = "Letters"},
                 },
                 Favorite = false
             }
