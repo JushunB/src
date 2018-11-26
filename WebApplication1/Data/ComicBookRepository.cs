@@ -12,10 +12,11 @@ namespace WebApplication1.Data
         {
             new ComicBook()
             {
+                Id = 1,
                 SeriesTitle = "The Man of Steel",
                 IssueNumber = 700,
                 DescriptionHtml = "<p>Final issue! Witness the final hours of Lex Luthors' life and his one, last, great act of revenge! Even if Superman survives... <strong>will Clark Kent?</strong></p>",
-                Artists = new[]
+                Artists = new Artist[]
                 {
                     new Artist() {Name = "Jushun Blackmon", Role = "Script"},
                     new Artist() {Name = "Ceaser Drawer", Role = "Pencils"},
@@ -26,6 +27,7 @@ namespace WebApplication1.Data
             },
             new ComicBook()
             {
+                Id = 2,
                 SeriesTitle = "The Amazing Spider-Man",
                 IssueNumber = 700,
                 DescriptionHtml = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives...<strong>will Peter Parker?</strong></p>",
@@ -41,6 +43,7 @@ namespace WebApplication1.Data
             },
             new ComicBook()
             {
+                Id = 3,
                 SeriesTitle = "The Amazing Spider-Man",
                 IssueNumber = 657,
                 DescriptionHtml = "<p><strong>FF: THREE TIE-IN.</strong> Spider-Man visits the FF for a very private wake--just for family.</p>",

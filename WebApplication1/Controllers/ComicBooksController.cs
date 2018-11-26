@@ -3,28 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication1.Data;
 using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
    public class ComicBooksController : Controller
     {
-        public ActionResult Detail()
+        private ComicBookRepository _comicBookRepository = null;
+
+        public ComicBooksController()
         {
-            var comicBook = new ComicBook()
+            _comicBookRepository = new ComicBookRepository();
+        }
+        public ActionResult Detail(int? id)
+        {
+            if (id == null)
             {
-                SeriesTitle = "The Man of Steel",
-                IssueNumber = 700,
-                DescriptionHtml = "<p>Final issue! Witness the final hours of Lex Luthors' life and his one, last, great act of revenge! Even if Superman survives... <strong>will Clark Kent?</strong></p>",
-                Artists = new []
-                {
-                    new Artist() {Name = "Jushun Blackmon", Role = "Script"},
-                    new Artist() {Name = "Ceaser Drawer", Role = "Pencils"},
-                    new Artist() {Name = "Manny Ink", Role = "Inks"},
-                    new Artist() {Name = "Johnny Rambo", Role = "Colors"},
-                    new Artist() {Name = "Lucy Letter", Role = "Letters"},
-                }
-            };
+                return HttpNotFound();
+            }
+
+            var comicBook = _comicBookRepository.GetComicBook((int)id);
 
             return View(comicBook);
         }
